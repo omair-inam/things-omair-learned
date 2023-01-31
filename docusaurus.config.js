@@ -65,10 +65,12 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Things Omair Learned',
+        /*
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
+        */
         items: [
           {
             type: 'doc',
