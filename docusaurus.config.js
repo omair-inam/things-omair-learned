@@ -44,6 +44,12 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/omair-inam/things-omair-learned/edit/main/',
+          // exclude tutorial resources
+          exclude: [
+              'tutorial-basics/**',
+              'tutorial-extras/**',
+              'intro.md'
+          ]
         },
         blog: {
           showReadingTime: true,
@@ -51,6 +57,11 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/omair-inam/things-omair-learned/edit/main/',
+          exclude: [
+              '2021-08-26-welcome/**',
+              '2021*',
+              '2019*'
+          ]
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
