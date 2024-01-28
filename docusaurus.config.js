@@ -7,11 +7,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Things Omair Learned',
-  tagline: 'Noting down ',
+  tagline: 'Omair learning in public',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://things-omair-learned.netlify.app/',
+  url: 'https://til.omairinam.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -19,7 +19,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'omair-inam', // Usually your GitHub org/user name.
-  projectName: 'tol', // Usually your repo name.
+  projectName: 'things-omair-learned', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -38,7 +38,6 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -52,6 +51,7 @@ const config = {
           ]
         },
         blog: {
+          routeBasePath: '/',
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -76,7 +76,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Things Omair Learned',
+        title: 'Today Omair Learned',
         /*
         logo: {
           alt: 'My Site Logo',
@@ -88,9 +88,9 @@ const config = {
             type: 'doc',
             docId: 'index',
             position: 'left',
-            label: 'TIL',
+            label: 'Topics',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {href: 'https://omairinam.com', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/omair-inam/things-omair-learned',
             label: 'GitHub',
@@ -134,7 +134,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                href: 'https://omairinam.com',
               },
               {
                 label: 'GitHub',
