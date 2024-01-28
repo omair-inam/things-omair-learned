@@ -87,10 +87,10 @@ const config = {
           {
             type: 'doc',
             docId: 'index',
-            position: 'left',
+            position: 'right',
             label: 'TIL',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/omair-inam/things-omair-learned',
             label: 'GitHub',
